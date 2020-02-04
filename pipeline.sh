@@ -32,7 +32,7 @@ echo "Setting up package repositories"
     sudo apt-get update
 } > /dev/null
 
-sudo apt-get install -y couchdb nodejs python3 python3-pip apache2 unzip
+sudo apt-get install -yq couchdb nodejs python3 python3-pip apache2 unzip
 
 rm -rf omega*
 
