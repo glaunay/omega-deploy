@@ -54,9 +54,10 @@ git clone --quiet "https://github.com/glaunay/omega-topology.git" omega-topology
 cd omega-topology-graph
 npm install --silent --no-progress &> /dev/null
 # Changement du .sample.ts en .ts après modification
-sed -i "s,<web-server-ip>,$server_address,g" src/utils/utils.sample.ts 
-rm src/utils/utils.ts
-mv src/utils/utils.sample.ts src/utils/utils.ts
+# Commenting out to use empty ip adress field for webseocket
+#sed -i "s,<web-server-ip>,$server_address,g" src/utils/utils.sample.ts 
+#rm src/utils/utils.ts
+#mv src/utils/utils.sample.ts src/utils/utils.ts
 
 
 echo "Building website"
